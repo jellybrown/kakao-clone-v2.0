@@ -9,75 +9,100 @@
       src="https://kit.fontawesome.com/95ffdfe59c.js"
       crossorigin="anonymous"
     ></script>
+    <link rel="stylesheet" href="css/styles.css" />
   </head>
-  <body>
-    <div class="status-bar">
-      <div class="status-bar__column">
-        <span class="status-bar__clock">13:56</span>
+  <body class="chats-body">
+    <div class="header-wrapper">
+      <div class="status-bar">
+        <div class="status-bar__column">
+          <span class="status-bar__clock">13:56</span>
+        </div>
+        <div class="status-bar__column">
+          <i class="fas fa-clock"></i>
+          <i class="fas fa-volume-mute"></i>
+          <i class="fas fa-wifi"></i>
+          <span class="status-bar__battery-level">100%</span>
+          <i class="fas fa-battery-full"></i>
+        </div>
       </div>
-      <div class="status-bar__column">
-        <i class="fas fa-clock"></i>
-        <i class="fas fa-volume-mute"></i>
-        <i class="fas fa-wifi"></i>
-        <span class="status-bar__battery-level">100%</span>
-        <i class="fas fa-battery-full"></i>
+      <header class="header">
+        <div class="header__header-column">
+          <a href="index.html" class="header__back-btn">
+            <i class="fas fa-arrow-left"></i>
+          </a>
+          <h1 class="header__title">명히</h1>
+        </div>
+        <div class="header__header-column">
+          <span class="header__icon">
+            <i class="fas fa-search"></i>
+          </span>
+          <span class="header__icon">
+            <i class="fas fa-bars"></i>
+          </span>
+        </div>
+      </header>
+    </div>
+
+    <main class="chat-screen">
+      <ul class="chat__messages">
+        <span class="chat__timestamp">2020년 1월 22일 수요일</span>
+        <li class="incoming-message message">
+          <img src="images/image1.jpg" class="g-avatar message__avatar" />
+          <div class="message__content">
+            <span class="message__bubble">
+              너 지금 뭐해???
+            </span>
+            <span class="message__author">명히</span>
+          </div>
+        </li>
+        <li class="sent-message message">
+          <span class="message__timestamp"></span>
+          <div class="message__content">
+            <span class="message__bubble">
+              나 아무것도 안하는뎅
+            </span>
+          </div>
+        </li>
+        <li class="incoming-message message">
+          <img src="images/image1.jpg" class="g-avatar message__avatar" />
+          <div class="message__content">
+            <span class="message__bubble">
+              너 지금 뭐해???ㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁ
+            </span>
+            <span class="message__author">명히</span>
+          </div>
+        </li>
+        <li class="sent-message message">
+          <span class="message__timestamp"></span>
+          <div class="message__content">
+            <span class="message__bubble">
+              나 아무것도 안하는뎅
+            </span>
+          </div>
+        </li>
+      </ul>
+    </main>
+    <div class="chat__write-container">
+      <input
+        class="chat__write"
+        type="text"
+        placeholder="메세지 보내기"
+        class="chat__write-input"
+      />
+      <div class="chat__icon-left chat__icon">
+        <i class="far fa-plus-square"></i>
+      </div>
+      <div class="chat__icon-right chat__icon">
+        <span class="chat__write-icon">
+          <i class="far fa-smile-wink"></i>
+        </span>
+        <span class="chat__write-icon">
+          <i class="fas fa-microphone"></i>
+        </span>
       </div>
     </div>
-    <header class="header">
-      <div class="header__header-column">
-        <a href="index.html">
-          <i class="fas fa-arrow-left fa-2x"></i>
-        </a>
-        <h1 class="header__title">명히</h1>
-      </div>
-      <div class="header__header-column">
-        <span class="header__icon">
-          <i class="fas fa-search"></i>
-        </span>
-        <div class="header__icon">
-            <i class="fas fa-bars"></i>
-        </div>
-      </div>
-    </header>
-    <main class="chat">
-        <ul class="chat__messages">
-            <span class="chat__timestamp">2020년 1월 22일 수요일</span>
-            <li class="incoming-message message">
-                <img src="images/image1.jpg" class="g-avatar message__avatar">
-                <div class="message__content">
-                    <span class="message__author">명히</span>
-                    <div class="message__bubble">
-                        배고프다
-                    </div>
-                </div>
-                <span class="message__timestamp"></span>
-            </li>
-            <li class="incoming-message message">
-                <span class="message__timestamp"></span>
-                <div class="message__content">
-                    <div class="message__bubble">
-                        나 아무것도 안하는뎅
-                    </div>
-                </div>
-                
-            </li>
-        </ul>
-    </main>
-    <div class="chat__write">
-        <div class="chat__write-column">
-           <i class="far fa-plus-square"></i>
-        </div>
-        <div class="chat__write-column">
-            <input type="text" placeholder="메세지 보내기" class="chat__write-input">
-        </div>
-        <div class="chat__write-column">
-            <span class="chat__write-icon">
-                <i class="far fa-smile-wink"></i>
-            </span>
-            <span class="chat__write-icon">
-                <i class="fas fa-microphone"></i>
-            </span>
-        </div>
+    <div class="bigScreen">
+      <span class="bigScreen__text">화면을 줄여주세요 :)</span>
     </div>
   </body>
 </html>

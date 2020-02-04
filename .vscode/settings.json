@@ -1,0 +1,4 @@
+{
+  "prettier.quoteProps": "preserve",
+  "editor.formatOnSave": true
+}
