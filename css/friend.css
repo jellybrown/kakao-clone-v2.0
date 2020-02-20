@@ -4,6 +4,10 @@
   align-items: center;
 }
 
+.friend--lg {
+  margin-bottom: 20px;
+}
+
 .friend .friend__avatar {
   width: 50px;
 
