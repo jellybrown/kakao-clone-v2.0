@@ -21,4 +21,4 @@
 
 ## 영상
 
-<img src="https://github.com/jellybrown/kakao-clone-v2.0/blob/master/kakao-clone-2.gif" witdth="400">
+<img src="https://github.com/jellybrown/kakao-clone-v2.0/blob/master/kakao-clone-2.gif" width="400">
